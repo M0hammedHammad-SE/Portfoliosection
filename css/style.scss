@@ -1,0 +1,241 @@
+@font-face {
+    font-family: ge-tv;
+    src: url(..//fonts/ge-tv.ttf);
+}
+@font-face {
+    font-family:JF-Flat ;
+    src: url(..//fonts/JF-Flat-regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family:JF-Flat ;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-emphasis: none;
+}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+#filters {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+#filters li span {
+    display: block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #021d38;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover{
+        color: #1a436d;
+    }
+}
+
+#filters li span.active {
+    background: #021d38;
+    color: #44e9bf;
+    border: 1px solid #021d38;
+}
+
+
+#portfoliolist1 .portfolio1 {
+    width: 33%;
+    margin-bottom: 25px;
+    display: none;
+    overflow: hidden;
+}
+
+.portfolio-wrapper1 {
+    overflow: hidden;
+    position: relative !important;
+    background: #666;
+    cursor: pointer;
+}
+
+.portfolio1 img {
+    max-width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio1 .label {
+    position: absolute;
+    width: 100%;
+    height: 125px;
+    bottom: -110px;
+    padding: 15px 0 0 0;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio1 .label-bg {
+    background: #021d38;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfolio1 .label-text {
+    position: relative;
+    z-index: 500;
+    padding: 5px 20px;
+    text-align: right;
+    a{
+        color: #44e9bf ;
+        display: inline-block;
+        margin-bottom: 8px;
+        &:hover{
+            color: #44e9bf !important;
+        }
+
+    }
+    .text-category{
+        color: #fff;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .more{
+        background-color: #44e9bf;
+        color: #021d38;
+        padding: 8px 12px;
+        display: inline-block;
+        font-size: 9px;
+        border-radius: 5px;
+        margin-left: 20px;
+        &:hover{
+            color: #000 !important;
+            text-decoration: none;
+        }
+        
+    }
+    .icon{
+        color: #44e9bf;
+        font-size: 9px;
+        i{
+            color: #fff;
+
+        }
+    }
+}
+
+i{
+    color: #44e9bf;
+}
+
+.portfolio1:hover .label {
+    bottom: 0px;
+}
+
+.portfolio1:hover img {
+    top: -30px;
+}
+
+#portfolios{
+    background-color: rgb(248, 248, 248);
+    padding: 80px 0;
+    .heading{
+        .top{
+            img{
+                width: 100px;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        h2{
+            color: #1a436d;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }}
+        p{
+            font-size: 18px;
+            text-align: center;
+            color: #021d38;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+    }
+}
+
+
+@media (max-width:400px) {
+   #filters{
+    margin: 25px 10px;
+    gap: 5px;
+   }
+#filters li span {
+    display: block;
+    font-size: 9px;
+    padding: 5px 8px;
+    text-decoration: none;
+    color: #021d38;
+    cursor: pointer;
+    font-weight: normal;
+    &:hover{
+        color: #1a436d;
+    }
+}
+
+#filters li span.active {
+    background: #021d38;
+    color: #44e9bf;
+    border: 1px solid #021d38;
+}
+
+
+    
+}
+
+
+@media (min-width: 401px) and (max-width: 767px) {
+   #filters{
+    gap: 12px;
+    margin: 25px 10px;
+   }
+#filters li span {
+    display: block;
+    font-size: 11px;
+    padding: 8px 8px;
+    text-decoration: none;
+    color: #021d38;
+    cursor: pointer;
+    font-weight: normal;
+    &:hover{
+        color: #1a436d;
+    }
+}
+
+#filters li span.active {
+    background: #021d38;
+    color: #44e9bf;
+    border: 1px solid #021d38;
+}
+
+
+    
+}
+@media (max-width:991px) {
+    .portfolio1{
+        width: 100% !important;
+        img{
+            width: 100%;
+            object-fit: cover !important;
+        }
+    }
+    
+}
